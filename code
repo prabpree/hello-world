@@ -1,2 +1,2 @@
-touch /tmp/build
-echo "build successfull" >>/tmp/build
+mkdir /tmp/build
+

@@ -8,4 +8,5 @@ pipeline {
 }
 }
 }
+    archiveArtifacts '/var/lib/jenkins/workspace/website/jenkinsfile'
 }

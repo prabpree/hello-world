@@ -1,0 +1,2 @@
+touch /tmp/build
+echo "build successfull" >>/tmp/build

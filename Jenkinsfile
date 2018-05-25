@@ -4,7 +4,7 @@ pipeline {
         stage('deploy')
     {
         steps {
-            sh 'sudo yum -y install httpd'
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'JenkinsUserKey', url: 'https://github.com/prabpree/hello-world']]])
 }
 }
 }
